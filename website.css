@@ -18,8 +18,9 @@ body {
   background-color: #ffffff;
   position: absolute;
   top: 0;
-  left: 0;
-  width: 100%;
+  text-align: center;
+  width: 90%;
+  border-radius: 10px;
 }
 
 .topnav a {
@@ -37,6 +38,7 @@ body {
 }
 
 .topnav a.active {
-  background-color: #efd780;
+  background-color: #ff5d73;
   color: white;
+  font-weight: bold;
 }
