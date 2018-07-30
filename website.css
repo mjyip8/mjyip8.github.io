@@ -1,3 +1,4 @@
+
 /* 
  COLOR PALETTE
  background-yellow: #f7ffdd
@@ -9,6 +10,7 @@
 
 body {
   font-family: 'Nunito Sans', sans-serif; 
+  background-color: #f7ffdd;
 }
 
 .topnav {
@@ -30,11 +32,11 @@ body {
 }
 
 .topnav a:hover {
-  background-color: #efd780;
+  background-color: #fcfdaf;
   color: black;
 }
 
 .topnav a.active {
   background-color: #efd780;
-  color: black;
+  color: white;
 }
