@@ -1,17 +1,16 @@
 
 /* 
  COLOR PALETTE
- background-yellow: #f7ffdd
- light-yellow: #fcfdaf
- aqua: #a9f0d1
- mustard: #efd780
- magenta: #ff5d73;
+background color pink: #FFF5F2;
+purple: #893DC4;
+dark orange: #DD5B30;
+teal: #00A5AE;
  */
 
 
 body {
   font-family: 'Futura', sans-serif; 
-  background-color: #f7ffdd;
+  background-color: #FFF5F2;
   margin: 0 !important;
   padding: 0 !important;
 }
@@ -19,16 +18,36 @@ body {
 h1 {
   font-family: 'Futura';
   color: white;
-}
-
-.imgbox {
- margin: 0px;
+  font-weight: normal;
 }
 
 .terminal_banner {
-  font-family: Menlo;
-  font-size: 16px;
+  font-family: Consolas;
+  border-right: 0.5em solid white;
+  font-size: 1.4vw;
   color: white;
+  position: absolute;
+  top: 15.5vw;
+  left: 5vw;
+  width: 34ch;
+  overflow: hidden;
+  white-space: nowrap;
+  -webkit-animation: typing 12s steps(34, end) ease-out,
+             blink-caret 1s step-end;
+  animation: typing 12s steps(34, end),
+             blink-caret 1s step-end infinite;
+}
+
+@keyframes typing { from { width: 0; } }
+@-webkit-keyframes typing { from { width: 0; } }
+@keyframes blink-caret { 50% { border-color: transparent; } }
+@-webkit-keyframes blink-caret { 50% { border-color: transparent; } }
+
+.title {
+  position: absolute;
+  top: 4.2vw;
+  left: 5vw;
+  font-size: 5vw;
 }
 
 .banner_pic {
@@ -37,27 +56,27 @@ h1 {
 }
 
 .sidenav {
-  width: 150px;
+  width: 10vw;
   position: absolute;
   z-index: 1;
   top: 0;
   right: 0;
   overflow-x: hidden;
-  padding-top: 20px;
+  padding-top: 23px;
   font-family: Futura;
 }
 
 .sidenav a {
     padding: 6px 8px 6px 16px;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 1.3vw;
     color: white;
     font-family: Futura;
     display: block;
 }
 
 .sidenav a:hover {
-    color: #f1f1f1;
+    color: #893DC4;
 }
 
 .main {
