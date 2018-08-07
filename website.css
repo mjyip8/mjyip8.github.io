@@ -12,11 +12,17 @@
 body {
   font-family: 'Futura', sans-serif; 
   background-color: #f7ffdd;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 h1 {
   font-family: 'Futura';
   color: white;
+}
+
+.imgbox {
+ margin: 0px;
 }
 
 .terminal_banner {
@@ -25,15 +31,20 @@ h1 {
   color: white;
 }
 
+.banner_pic {
+  width: 100%;
+  margin: 0px;
+}
+
 .sidenav {
-    width: 150px;
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    right: 0;
-    overflow-x: hidden;
-    padding-top: 20px;
-    font-family: Futura;
+  width: 150px;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+  font-family: Futura;
 }
 
 .sidenav a {

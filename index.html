@@ -13,7 +13,9 @@
   <a href="#about">About</a>
 </div>
 
-<img src = "banner.png" style = "width: 100%;">
+<div class = "imgbox">
+<img id = "banner_pic "src='banner.png' style = "width: 100%;">
+</div>
 <div class = "main">
   <h2>Top Navigation Example</h2>
   <p>Some content..</p>
@@ -24,6 +26,9 @@
 
 <script type = "text/javascript">
 
+$(document).ready() {
+	resizePic();
+}
 
 
 </script>
