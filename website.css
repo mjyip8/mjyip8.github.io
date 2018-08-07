@@ -8,38 +8,51 @@
  magenta: #ff5d73;
  */
 
+
 body {
-  font-family: 'Nunito Sans', sans-serif; 
+  font-family: 'Futura', sans-serif; 
   background-color: #f7ffdd;
 }
 
-.topnav {
-  overflow: hidden;
-  background-color: #ffffff;
-  position: absolute;
-  margin: auto;
-  padding: 10px;
-  text-align: center;
-  width: 90%;
-  border-radius: 10px;
-}
-
-.topnav a {
-  float: left;
-  color: #333333;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.topnav a:hover {
-  background-color: #fcfdaf;
-  color: black;
-}
-
-.topnav a.active {
-  background-color: #ff5d73;
+h1 {
+  font-family: 'Futura';
   color: white;
-  font-weight: bold;
+}
+
+.terminal_banner {
+  font-family: Menlo;
+  font-size: 16px;
+  color: white;
+}
+
+.sidenav {
+    width: 100px;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.main {
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
 }
