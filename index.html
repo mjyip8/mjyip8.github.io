@@ -6,7 +6,7 @@
 <link href="website.css" rel="stylesheet"/>
 </head>
 <body>
-<div class="sidenav">
+<div class = "sidenav">
   <a class="active" href="#home">home</a>
   <a href="#about">about</a>
   <a href="#portfolio">portfolio</a>
@@ -17,11 +17,29 @@
 <img id = "banner_pic "src='banner.png' style = "width: 100%;">
 <h1 class = "title">MADELEINE YIP</h1>
 <div class = "terminal_banner">> programmer, free-thinker, artist</div>
-<div class = "main">
-  <h2>Top Navigation Example</h2>
+<div class = "pink_rect" onscroll="goUp(event)"></div>
+
+
+<div class = "main" id = "home">
   <p>Some content..</p>
 </div>
 
+<div class = "main" id = "about">
+	<h2>A little about me...</h2>
+	<p>I am currently a junior at Stanford majoring in Art Practice and Computer Science.</p>
+	<h3>My passions</h3>
+	<p>Running, hiking, painting, drinking tea</p>
+	<h3>Skills</h3>
+	<p>C++, HTML, Javascript, Python, C</p>
+</div>
+<div class = "main" id = "portfolio">
+	<h2>A little about me...</h2>
+	<p>I am currently a junior at Stanford majoring in Art Practice and Computer Science.</p>
+	<h3>My passions</h3>
+	<p>Running, hiking, painting, drinking tea</p>
+	<h3>Skills</h3>
+	<p>C++, HTML, Javascript, Python, C</p>
+</div>
 
   
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -32,6 +50,13 @@ $(document).ready() {
 	resizePic();
 }
 
+$(window).scroll() {
+	document.getElementById("pink_rect").style.display = "block";
+}
+
+function goUp(event) {
+	event.target.style.display = "inline-block";
+}
 
 </script>
 </body>

@@ -21,6 +21,33 @@ h1 {
   font-weight: normal;
 }
 
+.pink_rect {
+  height: 400px;
+  width = 100%;
+  background-color: #FFF5F2;
+  z-index: 2;
+  display: none;
+  -webkit-animation: goUp ease-out;
+  animation: goUp ease-out;
+}
+
+@keyframes goUp { 
+  from { 
+    margin-top: 0px; 
+  } 
+  to {
+    margin: -100px;
+  }
+}
+@-webkit-keyframes goUp { 
+   from { 
+    margin-top: 0px; 
+  } 
+  to {
+    margin: -100px;
+  }
+} 
+
 .terminal_banner {
   font-family: Consolas;
   border-right: 0.5em solid white;
@@ -53,6 +80,7 @@ h1 {
 .banner_pic {
   width: 100%;
   margin: 0px;
+  z-index: 1;
 }
 
 .sidenav {
@@ -75,7 +103,7 @@ h1 {
     display: block;
 }
 
-.sidenav a:hover {
+.sidenav :hover {
     color: #893DC4;
 }
 
