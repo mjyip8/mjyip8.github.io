@@ -32,9 +32,9 @@ h1 {
   width: 34ch;
   overflow: hidden;
   white-space: nowrap;
-  -webkit-animation: typing 12s steps(34, end) ease-out,
+  -webkit-animation: typing 11s steps(34, end) ease-out,
              blink-caret 1s step-end;
-  animation: typing 12s steps(34, end),
+  animation: typing 11s steps(34, end),
              blink-caret 1s step-end infinite;
 }
 
