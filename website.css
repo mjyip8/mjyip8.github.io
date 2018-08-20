@@ -21,6 +21,45 @@ h1 {
   font-weight: normal;
 }
 
+.pink_rect {
+  height: 400px;
+  width: 100%;
+  background-color: #FFF5F2;
+  z-index: 3;
+  position: absolute;
+  display: block;
+  transition: margin-top 0.2s ease-in-out;
+  margin-top: 0px;
+}
+
+.pink_rect_up {
+  height: 400px;
+  width: 100%;
+  background-color: #FFF5F2;
+  z-index: 3;
+  position: absolute;
+  display: block;
+  transition: margin-top 0.2s ease-in-out;
+  margin-top: -500px;
+}
+
+@keyframes goUp { 
+  from { 
+    margin-top: 0px; 
+  } 
+  to {
+    margin-top: -100px;
+  }
+}
+@-webkit-keyframes goUp { 
+   from { 
+    margin-top: 0px; 
+  } 
+  to {
+    margin-top: -100px;
+  }
+} 
+
 .terminal_banner {
   font-family: Consolas;
   border-right: 0.5em solid white;
@@ -53,9 +92,10 @@ h1 {
 .banner_pic {
   width: 100%;
   margin: 0px;
+  z-index: 1;
 }
 
-.sidenav {
+#sidenav {
   width: 10vw;
   position: absolute;
   z-index: 1;
@@ -66,7 +106,7 @@ h1 {
   font-family: Futura;
 }
 
-.sidenav a {
+#sidenav a {
     padding: 6px 8px 6px 16px;
     text-decoration: none;
     font-size: 1.3vw;
@@ -75,7 +115,7 @@ h1 {
     display: block;
 }
 
-.sidenav a:hover {
+#sidenav :hover {
     color: #893DC4;
 }
 

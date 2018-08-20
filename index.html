@@ -6,7 +6,7 @@
 <link href="website.css" rel="stylesheet"/>
 </head>
 <body>
-<div class="sidenav">
+<div id = "sidenav">
   <a class="active" href="#home">home</a>
   <a href="#about">about</a>
   <a href="#portfolio">portfolio</a>
@@ -14,23 +14,75 @@
   <a href="#contact">contact</a>
 </div>
 
-<img id = "banner_pic "src='banner.png' style = "width: 100%;">
+<img class = "banner_pic "src='banner.png' style = "width: 100%;">
 <h1 class = "title">MADELEINE YIP</h1>
 <div class = "terminal_banner">> programmer, free-thinker, artist</div>
-<div class = "main">
-  <h2>Top Navigation Example</h2>
-  <p>Some content..</p>
+
+
+<div class = "pink_rect">
+	<div class = "main" id = "home">
+	  <p>Some content..</p>
+	</div>
+	<div class = "main" id = "about">
+		<h2>A little about me...</h2>
+		<p>I am currently a junior at Stanford majoring in Art Practice and Computer Science.</p>
+		<h3>My passions</h3>
+		<p>Running, hiking, painting, drinking tea</p>
+		<h3>Skills</h3>
+		<p>C++, HTML, Javascript, Python, C</p>
+	</div>
+	<div class = "main" id = "portfolio">
+		<h2>A little about me...</h2>
+		<p>I am currently a junior at Stanford majoring in Art Practice and Computer Science.</p>
+		<h3>My passions</h3>
+		<p>Running, hiking, painting, drinking tea</p>
+		<h3>Skills</h3>
+		<p>C++, HTML, Javascript, Python, C</p>
+	</div>
 </div>
 
+
   
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-<script type = "text/javascript">
+<script>
+// Hide Header on on scroll down
+var didScroll;
+var lastScrollTop = 0;
+var delta = 5;
+var navbarHeight = $('header').outerHeight();
 
-$(document).ready() {
-	resizePic();
+$(window).scroll(function(event){
+    didScroll = true;
+});
+
+setInterval(function() {
+    if (didScroll) {
+        hasScrolled();
+        didScroll = false;
+    }
+}, 250);
+
+function hasScrolled() {
+    var st = $(this).scrollTop();
+    
+    // Make sure they scroll more than delta
+    if(Math.abs(lastScrollTop - st) <= delta)
+        return;
+    
+    // If they scrolled down and are past the navbar, add class .nav-up.
+    // This is necessary so you never see what is "behind" the navbar.
+    if (st > lastScrollTop && st > navbarHeight){
+        // Scroll Down
+        $('header').removeClass('pink_rect_down').addClass('pink_rect_up');
+    } else {
+        // Scroll Up
+        if(st + $(window).height() < $(document).height()) {
+            $('header').removeClass('pink_rect_up').addClass('pink_rect_down');
+        }
+    }
+    
+    lastScrollTop = st;
 }
-
 
 </script>
 </body>
