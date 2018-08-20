@@ -7,12 +7,18 @@ dark orange: #DD5B30;
 teal: #00A5AE;
  */
 
+@font-face {
+  font-family: Consolas;
+  src: url(Consolas.ttf);
+}
+
 
 body {
   font-family: 'Futura', sans-serif; 
   background-color: #FFF5F2;
   margin: 0 !important;
   padding: 0 !important;
+  height: 100%;
 }
 
 h1 {
@@ -63,11 +69,11 @@ h1 {
 .terminal_banner {
   font-family: Consolas;
   border-right: 0.5em solid white;
-  font-size: 1.4vw;
+  font-size: 3vw;
   color: white;
   position: absolute;
-  top: 15.5vw;
-  left: 5vw;
+  top: 55%;
+  left: 20%;
   width: 34ch;
   overflow: hidden;
   white-space: nowrap;
@@ -82,17 +88,62 @@ h1 {
 @keyframes blink-caret { 50% { border-color: transparent; } }
 @-webkit-keyframes blink-caret { 50% { border-color: transparent; } }
 
-.title {
+.title { /* I want the text to wrap in small window*/
   position: absolute;
-  top: 4.2vw;
-  left: 5vw;
-  font-size: 5vw;
+  display: block;
+  margin-left: 10vw;
+  top: 25vh;
+  text-align: center;
+  font-size: 10vh;
+  font-size-adjust: unset;
+  text-align: center;
+  line-height: 15vw;
 }
 
 .banner_pic {
-  width: 100%;
+  height: 100%;
+  margin: auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  z-index: 0;
+}
+
+.down_button: hover {
+  background-color: white;
+  opacity: 0.8;
+  color: gray;
+}
+
+.banner {
+  background-color: #1b191a;
+  text-align: center;
+  padding: 0px;
   margin: 0px;
-  z-index: 1;
+}
+
+.bgimg-1 {
+  background: url("banner.png");
+  height: 100vh;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.down_button {
+  border-radius: 5px;
+  padding: 1vw;
+  color: white;
+  border: 2px solid white;
+  font-family: Futura;
+  font-size: 2.3vw;
+  text-align: center;
+  position: absolute;
+  display: inline-block;
+  top: 80%;
+  left: 45%;
+  z-index: 4;
+  text-decoration: none;
 }
 
 #sidenav {
@@ -103,19 +154,27 @@ h1 {
   right: 0;
   overflow-x: hidden;
   padding-top: 23px;
+  padding-right: 2vw;
   font-family: Futura;
+  height: 50vh;
 }
 
 #sidenav a {
-    padding: 6px 8px 6px 16px;
     text-decoration: none;
-    font-size: 1.3vw;
+    font-size: 1.5vw;
     color: white;
     font-family: Futura;
     display: block;
+    margin: 1vw;
+    line-height: 20px;
+    text-align: right;
 }
 
 #sidenav :hover {
+    color: #893DC4;
+}
+
+a .active {
     color: #893DC4;
 }
 
