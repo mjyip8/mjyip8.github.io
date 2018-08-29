@@ -74,7 +74,7 @@ h3 {
 
 table {
   border-collapse: collapse;
-  border-color: none;
+  border: none;
   padding: 0px;
   text-align: left;
 }
@@ -82,26 +82,26 @@ table {
 th {
   text-align: center;
   padding: 0px;
-  height: .5vh;
+  height: 2.1vw;
   color: #DD5B30;
   font-family: Futura;
   font-weight: bold;
   font-size: 2vw;
-  border-color: none;
+  border: none;
 }
 
 tr {
   padding: 0px;
-  height: 0.5vh;
-  border-color: none;
+  height: 1.6vw;
+  border: none;
 }
 
 
 td {
   padding: 10px;
-  height: 0.5vh;
+  height: 1.6vw;
   font-size: 1.5vw;
-  border-color: none;
+  border: none;
 }
 
 .line {
