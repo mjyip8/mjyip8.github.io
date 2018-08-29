@@ -2,8 +2,8 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-height, initial-scale=1">
-<link href="website.css" rel="stylesheet"/>
 <link href="materialize.css" rel="stylesheet"/>
+<link href="website.css" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 <title>Madeleine Yip</title>
@@ -29,12 +29,12 @@
 	<div class = "main" id = "about">
 		<h2 style = "color: #893DC4;">ABOUT</h2>
         <h3> > let me introduce myself</h3>
-        <div class = "section_container">
             <img src = "assets/profile.png" class = "profile">
-            <p class = "big">I am currently a junior at Stanford majoring in Art Practice and Computer Science with a Computer Graphics concentration. I love to learn how different graphics hacks can trick the eye and my goal is to develop graphics tools for studios as a software engineer.</p>
-            <br>
-        </div>
-        <div class = "section_container">
+            <div class = "section_container profile_text">
+                <p class = "big">I am currently a junior at Stanford majoring in Art Practice and Computer Science with a Computer Graphics concentration. I love to learn how different graphics hacks can trick the eye and my goal is to develop graphics tools for studios as a software engineer.</p>
+                <br>
+            </div>
+        <div class = "section_container table">
             <div class = "section header">
                 skills
             </div>
@@ -45,13 +45,13 @@
                 courses
             </div>
         </div>
-         <div class = "section_container">
+         <div class = "section_container table">
             <div class = "section">
                 C++, C, Python, Java<br>
-                Familiar with: OpenGL<br><br><br>
+                Familiar with: OpenGL
             </div>
             <div class = "section">
-                Running, hiking, painting<br><br><br><br>
+                Running, hiking, painting
             </div>
             <div class = "section">
                 - CS248: Interactive Computer Graphics<br>
@@ -69,17 +69,18 @@
 <div class = "rect pink">
     <div class = "main" id = "tech_portfolio">
         <h2>TECHNICAL PORTFOLIO</h2>
-      <div class="card sticky-action">
+      <div class="card sticky-action large">
         <div class="card-image waves-effect waves-block waves-light">
-          <img class="activator" src="assets/kowloon.jpg">
+          <img class="activator" src="assets/raytraced1.png">
         </div>
         <div class="card-content">
-          <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-          <p><a href="#">This is a link</a></p>
+          <span class="card-title activator grey-text text-darken-4">Raytracer<i class="material-icons right">more_vert</i></span>
+            <p><a href="#">Project details</a></p>
+            <p><a href="#">Github</a></p>
         </div>
         <div class="card-reveal">
-          <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-          <p>Here is some more information about this product that is only revealed once clicked on.</p>
+          <span class="card-title grey-text text-darken-4">Raytracer<i class="material-icons right">close</i></span>
+          <p style = "font-size: 2vw">Programmed own raytracer in C++ and OpenGL.</p>
         </div>
       </div>
          
@@ -91,7 +92,19 @@
 
     <div class = "main" id = "art_portfolio">
         <h2>ART PORTFOLIO</h2>
-        <p>Coming soon...</p>
+        <div class="card sticky-action large">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="assets/kowloon.JPG">
+        </div>
+        <div class="card-content">
+          <span class="card-title activator grey-text text-darken-4">Kowloon Smorgasburg<i class="material-icons right">more_vert</i></span>
+            <p><a href="#">Project details</a></p>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4">Kowloon Smorgasburg<i class="material-icons right">close</i></span>
+          <p style = "font-size: 2vw">Oil Painting. May 2018.</p>
+        </div>
+      </div>
     </div>
     <div class = "main" id = "resume">
         <h2 style = "color: #00A5AE;">RESUME</h2>
