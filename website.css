@@ -291,6 +291,16 @@ a {
   background-size: cover;
 }
 
+.bgimg-3 {
+  background: url("assets/kowloon.JPG");
+  height: 100vh;
+  min-width: 100vw;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .down_button {
   border-radius: 5px;
   padding: 1.5vw;
@@ -456,3 +466,4 @@ a {
   }
 
 }
+
