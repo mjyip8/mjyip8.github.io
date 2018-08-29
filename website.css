@@ -340,7 +340,7 @@ a {
     font-family: Futura;
     display: block;
     margin: 1vw;
-    line-height: 20px;
+    line-height: 1.6vw;
     text-align: right;
 }
 
@@ -416,8 +416,8 @@ a {
 
   .section_container.profile_text {
     width: 70%; 
-    font-size: 4vh;
-    line-height: 5vh;
+    font-size: 3vh;
+    line-height: 4vh;
     margin: 0;
   }
 
