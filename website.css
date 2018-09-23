@@ -39,10 +39,6 @@ i {
   font-family: Material Icons;
 }
 
-p {
-  font-size: .3vw;
-}
-
 h1 {
   font-family: 'Futura';
   color: white;
@@ -71,8 +67,7 @@ h4 {
   font-weight: 500;
   font-size: 4vh;
   text-align: center;
-  margin-top: 0px;
-  margin-bottom: 10px;
+  margin: 5px;
 }
 
 .big {
@@ -86,12 +81,14 @@ table {
   border: none;
   padding: 0px;
   text-align: left;
+  width: 96%;
+  margin-left: 4%;
+  margin: auto;
 }
 
 th {
   text-align: center;
   padding: 0px;
-  height: 2.1vw;
   color: #DD5B30;
   font-family: Futura;
   font-weight: bold;
@@ -107,10 +104,12 @@ tr {
 
 
 td {
+  vertical-align: top;
   padding: 10px;
-  height: 1.6vw;
-  font-size: 1.5vw;
+  font-size: 3vh;
+  font-family: 'Futura';
   border: none;
+  width: 32%;
 }
 
 .line {
@@ -178,9 +177,11 @@ td {
 
 p {
   font-family: 'Futura';
-  font-size: 2vw;
-  margin-right: 10vw;
-  padding-top: 2vw;
+  font-size: 3.5vh;
+}
+
+p.right_margin {
+  margin-right: 10vw
 }
 
 .rect {
