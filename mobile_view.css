@@ -1,0 +1,139 @@
+@media screen and (max-width: 900px) {
+  .title {
+    font-size: 7vw;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+  #sidenav {padding-top: 15px; width: 70%; margin: 0 auto;}
+  #sidenav a {font-size: 2vw; display: inline-block;}
+
+  .card.large {
+    margin: 0 auto;
+    width: 40vw;
+    height: 50vw;
+    display: inline-block;
+  }
+
+  h2 {
+    font-size: 3vh;
+  }
+
+  h3 {
+    margin-bottom: 0px;
+    font-weight: normal;
+    font-size: 4vh;
+    text-align: left;
+  }
+
+  h4 {
+    font-family: 'Futura';
+    font-weight: 500;
+    font-size: 3vh;
+    text-align: center;
+    margin: 5px;
+  }
+
+  p {
+    font-size: 3vh;
+  }
+
+  p.right_margin {
+    margin-right: 2vw;
+    margin-left: 2vw;
+    font-size: 3vh;
+  }
+
+  td {
+    vertical-align: top;
+    padding: 10px;
+    font-size: 2vh;
+    font-family: 'Futura';
+    border: none;
+    width: 32%;
+  }
+
+  .rect {
+    max-height: 80vh;
+    padding: 0;
+  }
+
+  .big {
+    display: inline-block;
+    font-size: 2.5vh;
+    width: 80vw;
+    margin: 0 auto;
+    margin-left: 5vw;
+    line-height: 3vh;
+  }
+
+  .profile {
+    display: block;
+    margin: 1.5vh auto;
+    margin-top: 0;
+    float: none;
+    height: 30vw;
+    width: 30vw;
+  }
+
+  .section.header {
+    font-size: 4vw;
+    min-height: 0;
+  }
+
+  .section_container.profile_text {
+    width: 70%; 
+    font-size: 3vh;
+    line-height: 4vh;
+    margin: 0;
+  }
+
+  .bgimg-2 {
+    width: 100vw;
+    height: 50vh;
+  }
+
+  .bgimg-3 {
+    width: 100vw;
+    height: 50vh;
+  }
+
+  .bgimg-1 {
+    background-image: url("assets/old_banners/banner1.png");
+  }
+
+  .terminal_banner {
+    font-size: 3vw;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    margin-top: 15vh;
+  }
+
+  .down_button {
+    font-size: 5vw;
+    border-color: white;
+    font-weight: bold;
+  }
+
+  .title {
+    font-size: 8.5vh;
+    margin: 0 auto;
+    position: absolute;
+    top: 10%;
+    text-align: left;
+    padding: 15px;
+  }
+
+  .line {
+    height: 7px;
+  }
+
+  .section {
+    width: 28%;
+    font-size: 3vw;
+    padding: 5px;
+  }
+
+}
