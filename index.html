@@ -5,6 +5,7 @@
 <link href="materialize.css" rel="stylesheet"/>
 <link href="website.css" rel="stylesheet"/>
 <link href="mobile_view.css" rel="stylesheet"/>
+<link href="modal.css" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 <title>Madeleine Yip</title>
@@ -64,7 +65,7 @@
         </div>
         <div class="card-content">
           <span class="card-title activator grey-text text-darken-4">Raytraced image<i class="material-icons right">more_vert</i></span>
-            <p><a href="https://github.com/mjyip8/raytracedimage/blob/master/README.md">Project details</a></p>
+            <p><a href="#">Project details</a></p>
             <p><a href="https://github.com/mjyip8/raytracedimage">Github</a></p>
         </div>
         <div class="card-reveal">
@@ -72,7 +73,6 @@
           <p style = "font-size: 2vh">Created a depth of field effect with C++ and OpenGL. Changed shadow ray behavior to travel through glass. Used Maya to model the chair, table, wine glass, wall and candle.</p>
         </div>
       </div>
-         
     </div>
 </div>
 
@@ -80,17 +80,33 @@
 <div class = "rect pink">
 
     <div class = "main" id = "art_portfolio">
-        <h2>ART PORTFOLIO</h2>
-        <div class="card sticky-action large">
+      <h2>ART PORTFOLIO</h2>
+
+      <!-- Kowloon section -->
+      <div class="card sticky-action large">
         <div class="card-image waves-effect waves-block waves-light">
-          <img class="activator" src="assets/kowloon.JPG">
+          <img id = "kowloon" class="activator" src="assets/kowloon.JPG">
         </div>
         <div class="card-content">
           <span class="card-title activator grey-text text-darken-4">Kowloon Smorgasburg<i class="material-icons right">more_vert</i></span>
-            <p><a href="#">Project details</a></p>
+            <a><span onclick= "displayModal('kowloon')">Full size</span></p>
         </div>
         <div class="card-reveal">
           <span class="card-title grey-text text-darken-4">Kowloon Smorgasburg<i class="material-icons right">close</i></span>
+          <p style = "font-size: 2vw;">Oil Painting. May 2018.</p>
+        </div>
+      </div>
+
+      <div class="card sticky-action large">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="assets/self_portrait.JPG">
+        </div>
+        <div class="card-content">
+          <span class="card-title activator grey-text text-darken-4">Self-portrait<i class="material-icons right">more_vert</i></span>
+            <a><span onclick= "displayModal('self_portrait')">Full size</span></p>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4">Self-portrait<i class="material-icons right">close</i></span>
           <p style = "font-size: 2vw">Oil Painting. May 2018.</p>
         </div>
       </div>
@@ -108,11 +124,32 @@
     </div>
 </div>
 
+<!-- ALL MODALS-->
+<div id = "kowloon_modal" class = "modal" >
+  <span class="close" onclick = "closeModal('kowloon')">&times;</span>
+  <img class="modal-content" src="assets/kowloon.JPG">
+  <div class = "caption">Kowloon Smorgasburg. Oil painting. 2018.</div>
+</div>
+<div id = "self_portrait_modal" class = "modal" >
+  <span class="close" onclick = "closeModal('self_portrait')">&times;</span>
+  <img class="modal-content" src="assets/self_portrait.JPG">
+  <div class = "caption">Self-portrait. Oil painting. 2018.</div>
+</div>
+
 
 <script type="text/javascript" src="materialize.js"></script>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 <script>
+function displayModal(img_name) {
+  document.getElementById(img_name + "_modal").style.display = "block";
+}
+
+function closeModal(img_name) {
+  document.getElementById(img_name + "_modal").style.display = "none";
+}
+
 $(document).ready(function(){
   // Add smooth scrolling to all links
   $("a").on('click', function(event) {
@@ -137,6 +174,7 @@ $(document).ready(function(){
     } // End if
   });
 });
+
 </script>
 </body>
 </html>

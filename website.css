@@ -25,7 +25,7 @@ embed {
 
 body {
   font-family: 'Futura', sans-serif; 
-  background-color: white;
+  background-color: none;
   margin: 0 !important;
   padding: 0 !important;
   height: 100%;
