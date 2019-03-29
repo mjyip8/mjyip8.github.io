@@ -4750,8 +4750,8 @@ small {
 }
 
 .card.large {
-  height: 30vw;
-  width: 25vw;
+  height: 40vh;
+  width: 20vw;
 }
 
 .card.horizontal {
