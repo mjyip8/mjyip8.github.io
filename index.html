@@ -32,13 +32,13 @@
 		<h2 style = "color: #DD5B30;">ABOUT</h2>
         <h3> > let me introduce myself</h3>
         <img src = "profile.png" class = "profile">
-        <p class = "right_margin">I am currently a junior at Stanford majoring in Art Practice and Computer Science with a Computer Graphics concentration. I love to learn how different graphics hacks can trick the eye and I hope to work on animation and simulation as a software developer.</p>
+        <p class = "right_margin">I am a Computer Science Master's student at Stanford specializing in Computer Graphics. One of my main interests is Shader Look Development and incorporating Machine Learning into that work. I will be joining the Lucasfilm Advanced Development Group in the Fall.</p>
         <table>
             <tr>
                 <td>
                   <h4 style = "color: #DD5B30;">programming skills</h4>
-                  - Languages: C++, C, Python, C#, Java <br/>
-                  - Familiar with: OpenGL, Unity, Unreal<br/>
+                  - Languages: C++, C, Python, Java <br/>
+                  - Familiar with: Pytorch, OpenGL, Unreal, Tensorflow<br/>
                   - Skills: Object-oriented programming, Unix/Linux      
                 </td>
                 <td>
@@ -58,10 +58,77 @@
 
 <div class = "rect pink" style = "text-align: center">
     <div class = "main" id = "tech_portfolio">
-        <h2>TECHNICAL PORTFOLIO</h2>
+      <h2>TECHNICAL PORTFOLIO</h2>
+      <div class="vertical-center">
+        <div class="card sticky-action large">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" style="height:10%;" src="assets/path_output.jpg">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">HDR+ Computational Photography Pipeline<i class="material-icons right">more_vert</i></span>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Based on 2016 <i class="material-icons right">close</i> Googel Pixel paper </span>
+            <a href = "https://static.googleusercontent.com/media/hdrplusdata.org/en//hdrplus.pdf" style = "font-size: 2vh" >Link to paper</a>
+            <p style = "font-size: 2vh">Implemented Burst-Mode Camera RAW Processing (with local tone mapping with exposure fusion and burst mode alignment for denoising). </p>
+          </div>
+        </div>
+
+
+        <div class="card sticky-action large">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" style="height:10%;" src="assets/snow.gif">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">MPM Snow<i class="material-icons right">more_vert</i></span>
+              <p><a href="https://github.com/mjyip8/Snow/blob/master/README.md">Project details</a></p>
+              <p><a href="https://github.com/mjyip8/Snow">Github</a></p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Based on 2013 <i class="material-icons right">close</i> Teran Paper </span>
+            <a href = "http://www.math.ucla.edu/~jteran/papers/SSCTS13.pdf" style = "font-size: 2vh" >Link to Teran paper</a>
+            <p style = "font-size: 2vh">Implemented snow simulation with Material Point Method. </p>
+          </div>
+        </div>
+
+        <div class="card sticky-action large">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" style="height:10%;" src="assets/feature.gif">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">Position Based Fluids<i class="material-icons right">more_vert</i></span>
+              <p><a href="https://github.com/mjyip8/Fluids/blob/master/README.md">Project details</a></p>
+              <p><a href="https://github.com/mjyip8/Fluids">Github</a></p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Based on 2013 <i class="material-icons right">close</i>  Macklin Paper</span>
+            <a href = "http://mmacklin.com/pbf_sig_preprint.pdf" style = "font-size: 2vh" >Link to Macklin & Muller paper</a>
+            <p style = "font-size: 2vh">
+            Implemented a particle-based fluid simulator related to smoothed particle hydrodynamics (SPH).</p>
+          </div>
+        </div>
+
+        <div class="card sticky-action large">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" style="height:10%;" src="assets/long_spaghetti.gif">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">1D Cloth<i class="material-icons right">more_vert</i></span>
+              <p><a href="https://github.com/mjyip8/SpaghettiFactory/blob/master/README.md">Project details</a></p>
+              <p><a href="https://github.com/mjyip8/SpaghettiFactory">Github</a></p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Based on 2011 <i class="material-icons right">close</i> Bridson</span>
+            <a href = "https://www.cs.ubc.ca/~rbridson/docs/cloth2002.pdf" style = "font-size: 2vh" >Link to Bridson paper</a>
+            <p style = "font-size: 2vh">Implemented 1D cloth using impulses and penalty forces to resolve collisions.</p>
+          </div>
+        </div>
+      </div>
+
+
       <div class="card sticky-action large">
         <div class="card-image waves-effect waves-block waves-light">
-          <img class="activator" src="assets/raytraced1.png">
+          <img class="activator" style="height:10%;" src="assets/raytraced1.png">
         </div>
         <div class="card-content">
           <span class="card-title activator grey-text text-darken-4">Raytraced image<i class="material-icons right">more_vert</i></span>
@@ -71,55 +138,6 @@
         <div class="card-reveal">
           <span class="card-title grey-text text-darken-4">Raytraced image of<i class="material-icons right">close</i> terrace at sunset</span>
           <p style = "font-size: 2vh">Created a depth of field effect with C++ and OpenGL. Changed shadow ray behavior to travel through glass. Used Maya to model the chair, table, wine glass, wall and candle.</p>
-        </div>
-      </div>
-
-      <div class="card sticky-action large">
-        <div class="card-image waves-effect waves-block waves-light">
-          <img class="activator" src="assets/long_spaghetti.gif">
-        </div>
-        <div class="card-content">
-          <span class="card-title activator grey-text text-darken-4">1D Cloth<i class="material-icons right">more_vert</i></span>
-            <p><a href="https://github.com/mjyip8/SpaghettiFactory/blob/master/README.md">Project details</a></p>
-            <p><a href="https://github.com/mjyip8/SpaghettiFactory">Github</a></p>
-        </div>
-        <div class="card-reveal">
-          <span class="card-title grey-text text-darken-4">Based on 2011 <i class="material-icons right">close</i> Bridson</span>
-          <a href = "https://www.cs.ubc.ca/~rbridson/docs/cloth2002.pdf" style = "font-size: 2vh" >Link to Bridson paper</a>
-          <p style = "font-size: 2vh">Implemented 1D cloth using impulses and penalty forces to resolve collisions.</p>
-        </div>
-      </div>
-
-      <div class="card sticky-action large">
-        <div class="card-image waves-effect waves-block waves-light">
-          <img class="activator" src="assets/feature.gif">
-        </div>
-        <div class="card-content">
-          <span class="card-title activator grey-text text-darken-4">Position Based Fluids<i class="material-icons right">more_vert</i></span>
-            <p><a href="https://github.com/mjyip8/Fluids/blob/master/README.md">Project details</a></p>
-            <p><a href="https://github.com/mjyip8/Fluids">Github</a></p>
-        </div>
-        <div class="card-reveal">
-          <span class="card-title grey-text text-darken-4">Based on 2013 <i class="material-icons right">close</i>  Macklin Paper</span>
-          <a href = "http://mmacklin.com/pbf_sig_preprint.pdf" style = "font-size: 2vh" >Link to Macklin & Muller paper</a>
-          <p style = "font-size: 2vh">
-          Implemented a particle-based fluid simulator related to smoothed particle hydrodynamics (SPH).</p>
-        </div>
-      </div>
-
-      <div class="card sticky-action large">
-        <div class="card-image waves-effect waves-block waves-light">
-          <img class="activator" src="assets/snow.gif">
-        </div>
-        <div class="card-content">
-          <span class="card-title activator grey-text text-darken-4">MPM Snow<i class="material-icons right">more_vert</i></span>
-            <p><a href="https://github.com/mjyip8/Snow/blob/master/README.md">Project details</a></p>
-            <p><a href="https://github.com/mjyip8/Snow">Github</a></p>
-        </div>
-        <div class="card-reveal">
-          <span class="card-title grey-text text-darken-4">Based on 2013 <i class="material-icons right">close</i> Teran Paper </span>
-          <a href = "http://www.math.ucla.edu/~jteran/papers/SSCTS13.pdf" style = "font-size: 2vh" >Link to Teran paper</a>
-          <p style = "font-size: 2vh">Implemented snow simulation with Material Point Method. </p>
         </div>
       </div>
 
@@ -139,7 +157,7 @@
         </div>
         <div class="card-content">
           <span class="card-title activator grey-text text-darken-4">Kowloon Smorgasburg<i class="material-icons right">more_vert</i></span>
-            <a><span onclick= "displayModal('kowloon')">Full size</span></p>
+            <a><span onclick= "displayModal('kowloon')" style = "font-size:2.5vh;">Full size</span></p>
         </div>
         <div class="card-reveal">
           <span class="card-title grey-text text-darken-4">Kowloon Smorgasburg<i class="material-icons right">close</i></span>
@@ -149,11 +167,39 @@
 
       <div class="card sticky-action large">
         <div class="card-image waves-effect waves-block waves-light">
-          <img class="activator" src="assets/self_portrait.JPG">
+          <img id = "kowloon" class="activator" src="assets/meat_papercut.jpg">
+        </div>
+        <div class="card-content">
+          <span class="card-title activator grey-text text-darken-4">Fragile<i class="material-icons right">more_vert</i></span>
+            <a><span onclick= "displayModal('meat_papercut')" style = "font-size:2.5vh;">Full size</span></p>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4">Fragile<i class="material-icons right">close</i></span>
+          <p style = "font-size: 2vw;">Papercut on shopping bag. Sept 2019.</p>
+        </div>
+      </div>
+
+      <div class="card sticky-action large">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img id = "kowloon" class="activator" src="assets/meat_version.JPG">
+        </div>
+        <div class="card-content">
+          <span class="card-title activator grey-text text-darken-4">Meat Market<i class="material-icons right">more_vert</i></span>
+            <a><span onclick= "displayModal('meat')" style = "font-size:2.5vh;">Full size</span></p>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4">Meat Market<i class="material-icons right">close</i></span>
+          <p style = "font-size: 2vw;">Meat on glass. Sept 2019.</p>
+        </div>
+      </div>
+
+      <div class="card sticky-action large">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="assets/self_portrait.jpg">
         </div>
         <div class="card-content">
           <span class="card-title activator grey-text text-darken-4">Self-portrait<i class="material-icons right">more_vert</i></span>
-            <a><span onclick= "displayModal('self_portrait')">Full size</span></p>
+            <a><span onclick= "displayModal('self_portrait')" style = "font-size:2.5vh;">Full size</span></p>
         </div>
         <div class="card-reveal">
           <span class="card-title grey-text text-darken-4">Self-portrait<i class="material-icons right">close</i></span>
@@ -167,7 +213,7 @@
         </div>
         <div class="card-content">
           <span class="card-title activator grey-text text-darken-4">Trauma<i class="material-icons right">more_vert</i></span>
-            <a><span onclick= "displayModal('reunion')">Full size</span></p>
+            <a><span onclick= "displayModal('reunion')" style = "font-size:2.5vh;">Full size</span></p>
         </div>
         <div class="card-reveal">
           <span class="card-title grey-text text-darken-4">Reunion<i class="material-icons right">close</i></span>
@@ -177,11 +223,11 @@
 
       <div class="card sticky-action large">
         <div class="card-image waves-effect waves-block waves-light">
-          <img id = "cleo" class="activator" src="assets/cleo.JPG">
+          <img id = "cleo" class="activator" src="assets/cleo.jpg">
         </div>
         <div class="card-content">
           <span class="card-title activator grey-text text-darken-4">Beach Babe<i class="material-icons right">more_vert</i></span>
-            <a><span onclick= "displayModal('cleo')">Full size</span></p>
+            <a><span onclick= "displayModal('cleo')" style = "font-size:2.5vh;">Full size</span></p>
         </div>
         <div class="card-reveal">
           <span class="card-title grey-text text-darken-4">Beach Babe<i class="material-icons right">close</i></span>
@@ -196,7 +242,7 @@
         </div>
         <div class="card-content">
           <span class="card-title activator grey-text text-darken-4">Clueless<i class="material-icons right">more_vert</i></span>
-            <a><span onclick= "displayModal('lulu')">Full size</span></p>
+            <a><span onclick= "displayModal('lulu')" style = "font-size:2.5vh;">Full size</span></p>
         </div>
         <div class="card-reveal">
           <span class="card-title grey-text text-darken-4">Clueless<i class="material-icons right">close</i></span>
@@ -206,11 +252,11 @@
 
       <div class="card sticky-action large">
         <div class="card-image waves-effect waves-block waves-light">
-          <img id = "miley" class="activator" src="assets/miley.JPG">
+          <img id = "miley" class="activator" src="assets/miley.jpg">
         </div>
         <div class="card-content">
           <span class="card-title activator grey-text text-darken-4">Satan Incarnate<i class="material-icons right">more_vert</i></span>
-            <a><span onclick= "displayModal('miley')">Full size</span></p>
+            <a><span onclick= "displayModal('miley')" style = "font-size:2.5vh;">Full size</span></p>
         </div>
         <div class="card-reveal">
           <span class="card-title grey-text text-darken-4">Satan Incarnate<i class="material-icons right">close</i></span>
@@ -218,10 +264,10 @@
         </div>
       </div>
     </div>
-    <div class = "main" id = "resume">
+    <div class = "rect" style="height: 100%;" id = "resume">
         <h2 style = "color: #00A5AE;">RESUME</h2>
         <center>
-            <embed src = "assets/resume.pdf"> 
+            <embed src = "assets/resume.pdf#toolbar=0&navpanes=0&scrollbar=0" style="width: 40%; padding:10px;"> 
         </center>
     </div>
     <div class = "main" id = "contact">
@@ -235,6 +281,16 @@
   <span class="close" onclick = "closeModal('kowloon')">&times;</span>
   <img class="modal-content" src="assets/kowloon.JPG">
   <div class = "caption">Kowloon Smorgasburg. Oil painting. 2018.</div>
+</div>
+<div id = "meat_papercut_modal" class = "modal" >
+  <span class="close" onclick = "closeModal('meat_papercut')">&times;</span>
+  <img class="modal-content" src="assets/meat_papercut.jpg">
+  <div class = "caption">Fragile. Papercut on a shopping bag. Sept 2019.</div>
+</div>
+<div id = "meat_modal" class = "modal" >
+  <span class="close" onclick = "closeModal('meat')">&times;</span>
+  <img class="modal-content" src="assets/meat_version.JPG">
+  <div class = "caption">Meat Market. Meat on glass. Sept 2019.</div>
 </div>
 <div id = "self_portrait_modal" class = "modal" >
   <span class="close" onclick = "closeModal('self_portrait')">&times;</span>
